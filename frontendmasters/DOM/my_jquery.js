@@ -1,7 +1,11 @@
 (function() {
   $ = function(selector) {};
  
-  $.extend = function(target, object) {};
+  $.extend = function(target, object) {
+    for(var prop in object){
+        target[prop] = object[prop];
+    }
+  };
  
   // Static methods
   var isArrayLike = function(obj) {};
