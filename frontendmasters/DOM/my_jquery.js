@@ -285,7 +285,7 @@ this.length = elements.length;
     addClass: function(className) {},
     removeClass: function(className) {},
     append: function(element) {},
-    fn:$.prototype
+    $.fn = $.prototype;
   });
  
   $.buildFragment = function(html) {};
